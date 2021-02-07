@@ -15,3 +15,5 @@ spring.datasource.password: "root"
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   typeAliasesPackage: com.thoughtmechanix.licenses.model
+
+management.endpoints.web.exposure.include=refresh,health,info
