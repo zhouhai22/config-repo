@@ -15,3 +15,14 @@ mybatis:
   typeAliasesPackage: com.thoughtmechanix.organization.model
 
 management.endpoints.web.exposure.include: refresh,health,info
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: orgChangeTopic
+          content-type: application/json
+      kafka:
+        binder:
+          brokers: 106.15.72.10
