@@ -39,5 +39,5 @@ spring:
           binder: kafka
       kafka:
         binder:
-          brokers: 106.15.72.10
-          zkNodes: 106.15.72.10
+          brokers: 106.15.72.10:9092
+          zk-nodes: 106.15.72.10:2181
