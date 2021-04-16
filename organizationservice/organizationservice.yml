@@ -23,6 +23,8 @@ spring:
         output:
           destination: orgChangeTopic
           content-type: application/json
+          binder: kafka
       kafka:
         binder:
           brokers: 106.15.72.10
+          zkNodes: 106.15.72.10
